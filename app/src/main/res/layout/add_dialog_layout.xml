@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:hint="Name"
+                android:id="@+id/inputName"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:hint="Author"
+                android:id="@+id/inputAuthor"
+                android:layout_below="@id/inputName"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/inputAuthor"
+                android:id="@+id/inputLanguage"
+                android:hint="Language"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/inputLanguage"
+                android:id="@+id/inputPages"
+                android:hint="Pages"
+                android:inputType="number"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/inputPages"
+                android:id="@+id/inputShortDesc"
+                android:hint="Short Description"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/inputShortDesc"
+                android:id="@+id/inputLongDesc"
+                android:inputType="textMultiLine"
+                android:hint="Short Description"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/inputLongDesc"
+                android:id="@+id/inputUrl"
+                android:hint="Short Description"/>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:id="@+id/bottomBtn">
+        <Button
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:text="Add"
+            android:id="@+id/add_btn"
+            android:background="@drawable/button_custom"/>
+        <Button
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cancel_btn"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_custom"
+            android:text="Cancel" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Book Library</string>
+    <string name="book">book</string>
+    <string name="bundle">bundle</string>
+</resources>

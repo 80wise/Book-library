@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bookCardView"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_margin="7dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:id="@+id/bookName" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:id="@+id/bookImage"
+                android:layout_below="@id/bookName"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"/>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookImage">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short description of the book"
+                    android:id="@+id/shortDesc"
+                    android:textSize="10dp"/>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
